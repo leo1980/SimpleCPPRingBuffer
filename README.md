@@ -2,6 +2,7 @@
 
 - pure C++, no dependency
 - cross platform
+- single header file
 
 ## Example
 
