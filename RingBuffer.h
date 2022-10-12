@@ -49,10 +49,10 @@ public:
     class iterator;
 
     // Add element to Ring Buffer
-    void add(T value) noexcept;
+    void push_back(T value) noexcept;
 
     // Get size of the Ring Buffer
-    uint32 size() const noexcept;
+    uint32 capacity() const noexcept;
 
     // Clear element
     void clear() noexcept;
@@ -163,7 +163,7 @@ RingBuffer<T>::~RingBuffer()
 }
 
 template<class T>
-void RingBuffer<T>::add(T value) noexcept
+void RingBuffer<T>::push_back(T value) noexcept
 {
     m_data[m_head] = value;
     m_count++;
@@ -184,7 +184,7 @@ void RingBuffer<T>::add(T value) noexcept
 }
 
 template<class T>
-uint32 RingBuffer<T>::size() const noexcept
+uint32 RingBuffer<T>::capacity() const noexcept
 {
     return m_capacity;
 }
