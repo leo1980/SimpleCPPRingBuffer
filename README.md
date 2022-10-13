@@ -20,6 +20,6 @@
 ```
 
 ## TODO
-- implement pop_front, front, back functions
+- implement pop_front functions
 - make it thread safety, like lock free implementation
 - add tests 
